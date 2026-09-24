@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "dgSpecHash": "eSigXcnD7ek=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Marcos\\Documents\\Proyectos\\Back-end\\C#\\AccidentesMadrid\\AccidentesMadrid\\AccidentesMadrid.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Marcos\\.nuget\\packages\\apache.arrow\\14.0.2\\apache.arrow.14.0.2.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\csvhelper\\33.1.0\\csvhelper.33.1.0.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.data.analysis\\0.24.0-preview.26457.2\\microsoft.data.analysis.0.24.0-preview.26457.2.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.ml.dataview\\6.0.0-preview.26457.2\\microsoft.ml.dataview.6.0.0-preview.26457.2.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\system.numerics.tensors\\9.0.4\\system.numerics.tensors.9.0.4.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference System.Linq will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
+      "projectPath": "C:\\Users\\Marcos\\Documents\\Proyectos\\Back-end\\C#\\AccidentesMadrid\\AccidentesMadrid\\AccidentesMadrid.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Marcos\\Documents\\Proyectos\\Back-end\\C#\\AccidentesMadrid\\AccidentesMadrid\\AccidentesMadrid.csproj",
+      "libraryId": "System.Linq",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

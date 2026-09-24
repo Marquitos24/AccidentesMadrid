@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  accidentes-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: madrid-accidents-analyzer
+    volumes:
+      # Mapea tu carpeta local 'data' dentro de la ruta que use el contenedor
+      - ./AccidentesMadrid/data:/app/data
+    environment:
+      - DOTNET_ENVIRONMENT=Production
+    # Si tu aplicación es interactiva (una consola que espera inputs), usa esto:
+    stdin_open: true
+    tty: true

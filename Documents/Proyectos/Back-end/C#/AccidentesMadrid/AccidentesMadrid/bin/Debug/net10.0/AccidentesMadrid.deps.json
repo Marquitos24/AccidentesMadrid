@@ -1,0 +1,107 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "AccidentesMadrid/1.0.0": {
+        "dependencies": {
+          "CsvHelper": "33.1.0",
+          "Microsoft.Data.Analysis": "0.24.0-preview.26457.2"
+        },
+        "runtime": {
+          "AccidentesMadrid.dll": {}
+        }
+      },
+      "Apache.Arrow/14.0.2": {
+        "runtime": {
+          "lib/net6.0/Apache.Arrow.dll": {
+            "assemblyVersion": "14.0.2.0",
+            "fileVersion": "14.0.2.0"
+          }
+        }
+      },
+      "CsvHelper/33.1.0": {
+        "runtime": {
+          "lib/net9.0/CsvHelper.dll": {
+            "assemblyVersion": "33.0.0.0",
+            "fileVersion": "33.1.0.26"
+          }
+        }
+      },
+      "Microsoft.Data.Analysis/0.24.0-preview.26457.2": {
+        "dependencies": {
+          "Apache.Arrow": "14.0.2",
+          "Microsoft.ML.DataView": "6.0.0-preview.26457.2",
+          "System.Numerics.Tensors": "9.0.4"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Data.Analysis.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "0.2400.26.45702"
+          }
+        }
+      },
+      "Microsoft.ML.DataView/6.0.0-preview.26457.2": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.ML.DataView.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "6.0.26.45702"
+          }
+        }
+      },
+      "System.Numerics.Tensors/9.0.4": {
+        "runtime": {
+          "lib/net9.0/System.Numerics.Tensors.dll": {
+            "assemblyVersion": "9.0.0.4",
+            "fileVersion": "9.0.425.16305"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AccidentesMadrid/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Apache.Arrow/14.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2xvo9q2ag/Ze7TKSMsZfcQFMk3zZKWcduttJXoYnoevZD2bv+lKnOPeleyxONuR1ZwhZ00D86pPM9TWx2GMY2w==",
+      "path": "apache.arrow/14.0.2",
+      "hashPath": "apache.arrow.14.0.2.nupkg.sha512"
+    },
+    "CsvHelper/33.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kqfTOZGrn7NarNeXgjh86JcpTHUoeQDMB8t9NVa/ZtlSYiV1rxfRnQ49WaJsob4AiGrbK0XDzpyKkBwai4F8eg==",
+      "path": "csvhelper/33.1.0",
+      "hashPath": "csvhelper.33.1.0.nupkg.sha512"
+    },
+    "Microsoft.Data.Analysis/0.24.0-preview.26457.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s2lkM4yeJGQkV/YPV+DNCf1oekjU1zMx3Nzhapu0t7eUhP2x9NqHwcXoWUcJnf27fD72Mas9lDpv35v/E/lokw==",
+      "path": "microsoft.data.analysis/0.24.0-preview.26457.2",
+      "hashPath": "microsoft.data.analysis.0.24.0-preview.26457.2.nupkg.sha512"
+    },
+    "Microsoft.ML.DataView/6.0.0-preview.26457.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Xnq5y8dSEpp5e+aM50bLWE33/W0KVgHX+iyOY39ken5+il3AqH6i+iZpbG6As7Atxi89TCF6EgFrICcM8JlLew==",
+      "path": "microsoft.ml.dataview/6.0.0-preview.26457.2",
+      "hashPath": "microsoft.ml.dataview.6.0.0-preview.26457.2.nupkg.sha512"
+    },
+    "System.Numerics.Tensors/9.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ynVvqELpMWGQJ1Y90rlAmuTiSQIkXD0W5AMj7pVpEjECmrcIJLexIBblgccerHFijayfcsl1KCbkk+Sg5cS9vQ==",
+      "path": "system.numerics.tensors/9.0.4",
+      "hashPath": "system.numerics.tensors.9.0.4.nupkg.sha512"
+    }
+  }
+}
