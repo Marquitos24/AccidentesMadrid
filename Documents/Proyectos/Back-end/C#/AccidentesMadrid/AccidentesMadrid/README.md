@@ -1,4 +1,4 @@
-# 🚗 Análisis de Accidentes de Madrid con LINQ, PLINQ y DataFrames
+# Análisis de Accidentes de Madrid con LINQ, PLINQ y DataFrames
 
 Proyecto desarrollado en C# para el análisis de los accidentes de tráfico registrados en Madrid durante los años **2024, 2025 y 2026**.
 
@@ -12,31 +12,31 @@ El objetivo principal es comparar diferentes estrategias de procesamiento, estud
 
 ---
 
-## 📋 Índice
+## Índice
 
-- [🎯 Objetivo](#-objetivo)
-- [📊 Datos utilizados](#-datos-utilizados)
-- [🛠️ Tecnologías](#️-tecnologías)
-- [📁 Estructura del proyecto](#-estructura-del-proyecto)
-- [🏗️ Arquitectura](#️-arquitectura)
-- [📥 Lectura y combinación de datos](#-lectura-y-combinación-de-datos)
-- [🧱 Modelo de datos](#-modelo-de-datos)
-- [🔄 Mapper y transformación de datos](#-mapper-y-transformación-de-datos)
-- [🔎 Análisis mediante LINQ y PLINQ](#-análisis-mediante-linq-y-plinq)
-- [📊 Análisis mediante DataFrames](#-análisis-mediante-dataframes)
-- [📋 Las 30 consultas](#-las-30-consultas)
-- [⏱️ Medición del rendimiento](#️-medición-del-rendimiento)
-- [📈 Resultados actuales](#-resultados-actuales)
-- [🧠 Justificación de las decisiones de diseño](#-justificación-de-las-decisiones-de-diseño)
-- [🐳 Docker](#-docker)
-- [▶️ Ejecución del proyecto](#️-ejecución-del-proyecto)
-- [🔄 Flujo general de ejecución](#-flujo-general-de-ejecución)
-- [🚧 Estado de la práctica](#-estado-de-la-práctica)
-- [📝 Conclusiones](#-conclusiones)
+- [Objetivo](#-objetivo)
+- [Datos utilizados](#-datos-utilizados)
+- [Tecnologías](#️-tecnologías)
+- [Estructura del proyecto](#-estructura-del-proyecto)
+- [Arquitectura](#️-arquitectura)
+- [Lectura y combinación de datos](#-lectura-y-combinación-de-datos)
+- [Modelo de datos](#-modelo-de-datos)
+- [Mapper y transformación de datos](#-mapper-y-transformación-de-datos)
+- [Análisis mediante LINQ y PLINQ](#-análisis-mediante-linq-y-plinq)
+- [Análisis mediante DataFrames](#-análisis-mediante-dataframes)
+- [Las 30 consultas](#-las-30-consultas)
+- [Medición del rendimiento](#️-medición-del-rendimiento)
+- [Resultados actuales](#-resultados-actuales)
+- [Justificación de las decisiones de diseño](#-justificación-de-las-decisiones-de-diseño)
+- [Docker](#-docker)
+- [Ejecución del proyecto](#️-ejecución-del-proyecto)
+- [Flujo general de ejecución](#-flujo-general-de-ejecución)
+- [Estado de la práctica](#-estado-de-la-práctica)
+- [Conclusiones](#-conclusiones)
 
 ---
 
-# 🎯 Objetivo
+# Objetivo
 
 El objetivo de esta práctica es procesar los datos abiertos de accidentes de tráfico del Ayuntamiento de Madrid y realizar diferentes consultas sobre un conjunto de más de 100.000 registros.
 
@@ -54,7 +54,7 @@ Los objetivos principales son:
 
 ---
 
-# 📊 Datos utilizados
+# Datos utilizados
 
 Los datos proceden del portal de datos abiertos del Ayuntamiento de Madrid:
 
@@ -98,7 +98,7 @@ El conjunto combinado utilizado actualmente contiene:
 
 ---
 
-# 🛠️ Tecnologías
+# Tecnologías
 
 | Tecnología | Uso |
 |---|---|
@@ -121,7 +121,7 @@ El conjunto combinado utilizado actualmente contiene:
 
 ---
 
-# 📁 Estructura del proyecto
+# Estructura del proyecto
 
 ```text
 AccidentesMadrid/
@@ -158,7 +158,7 @@ AccidentesMadrid/
 
 ---
 
-# 🏗️ Arquitectura
+# Arquitectura
 
 Se ha separado el proyecto en diferentes responsabilidades.
 
@@ -209,7 +209,7 @@ Esto permite mantener separada la definición de las operaciones de su implement
 
 ---
 
-# 📥 Lectura y combinación de datos
+# Lectura y combinación de datos
 
 ## CsvHelper
 
@@ -273,7 +273,7 @@ Esto evita repetir una operación costosa de lectura y conversión.
 
 ---
 
-# 🧱 Modelo de datos
+# Modelo de datos
 
 El modelo principal es `Accidente`.
 
@@ -322,7 +322,7 @@ La utilización de enumeraciones permite evitar trabajar directamente con determ
 
 ---
 
-# 🔄 Mapper y transformación de datos
+# Mapper y transformación de datos
 
 Se utiliza `AccidenteMapper`, basado en `ClassMap<Accidente>` de `CsvHelper`.
 
@@ -408,7 +408,7 @@ Esto evita tener que comprobar continuamente valores nulos o vacíos durante las
 
 ---
 
-# 🔎 Análisis mediante LINQ y PLINQ
+# Análisis mediante LINQ y PLINQ
 
 La clase:
 
@@ -486,7 +486,7 @@ Este comportamiento será analizado mediante las mediciones de tiempo.
 
 ---
 
-# 📊 Análisis mediante DataFrames
+# Análisis mediante DataFrames
 
 Para la segunda parte de la práctica se utiliza:
 
@@ -547,7 +547,7 @@ De esta manera se obtiene un único DataFrame con los tres años.
 
 ---
 
-# 📋 Las 30 consultas
+# Las 30 consultas
 
 Se han planteado las siguientes operaciones para ambos enfoques:
 
@@ -588,7 +588,7 @@ El analizador DataFrame contiene actualmente las 30 operaciones definidas en la 
 
 ---
 
-# ⏱️ Medición del rendimiento
+# Medición del rendimiento
 
 Para medir los tiempos se utiliza:
 
@@ -620,7 +620,7 @@ Es importante separar la lectura del procesamiento porque cargar más de 100.000
 
 ---
 
-# 📈 Resultados actuales
+# Resultados actuales
 
 > **Estado provisional:** estos resultados corresponden al estado actual del proyecto. La parte LINQ todavía no contiene las 30 consultas y PLINQ todavía está pendiente de incorporar completamente. Por tanto, los tiempos y resultados de esta sección deberán actualizarse al finalizar la implementación.
 
@@ -680,7 +680,7 @@ Estos valores no deben considerarse todavía la comparación definitiva de la pr
 
 ---
 
-# 🧠 Justificación de las decisiones de diseño
+# Justificación de las decisiones de diseño
 
 ## 1. Separación Repository / Service
 
@@ -823,7 +823,7 @@ No se debe concluir que una tecnología es más rápida únicamente porque una i
 
 ---
 
-# 🐳 Docker
+# Docker
 
 El proyecto incluye un `Dockerfile` basado en .NET 10.
 
@@ -875,7 +875,7 @@ Esto permite mantener los CSV fuera de la imagen y proporcionar los datos al con
 
 ---
 
-# ▶️ Ejecución del proyecto
+# Ejecución del proyecto
 
 ## Ejecución normal
 
@@ -921,7 +921,7 @@ docker compose down
 
 ---
 
-# 🔄 Flujo general de ejecución
+# Flujo general de ejecución
 
 Actualmente el programa sigue este flujo:
 
@@ -954,9 +954,9 @@ Actualmente el programa sigue este flujo:
 
 ---
 
-# 🚧 Estado de la práctica
+# Estado de la práctica
 
-## ✅ Implementado actualmente
+## Implementado actualmente
 
 - [x] Lectura de los tres CSV.
 - [x] Configuración de `CsvHelper`.
@@ -987,7 +987,7 @@ Actualmente el programa sigue este flujo:
 
 ---
 
-# 📝 Conclusiones
+# Conclusiones
 
 El proyecto permite comparar tres estrategias diferentes para procesar un conjunto de datos relativamente grande:
 
